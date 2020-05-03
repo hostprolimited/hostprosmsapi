@@ -4,7 +4,7 @@
 
 $api_key = '--YOUR API KEY----';
 
-// Step 2: Replace your Install URL like https://mywebhost.com/sms/api with https://sms.hostpro.co.ke/sms/api is mandatory.
+// Step 2: Use https://sms.hostpro.co.ke/sms/api
 
 $url = 'https://sms.hostpro.co.ke/sms/api';
 
