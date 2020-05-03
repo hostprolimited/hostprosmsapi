@@ -14,27 +14,28 @@
  */
 
 
-// Step 1: Get the PaylifeSMS API library from https://github.com/matsaina/paylife.git,
+// Step 1: Get the Ultimate SMS API library from https://github.com/hostpro/hostprosmsapi,
 // following the instructions to install it with Composer.
 
 require_once 'src/Class_hostpro_SMS_API.php';
-use HostProSMS\HostProSMSAPI;
+use HostProSMS\HostproSMSAPI;
 
 
 // Step 2: set your API_KEY from https://sms.hostpro.co.ke/sms-api/info
 
-$api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
+$api_key = 'Insert Your Api Key Here';
 
 
 // Step 3: Change the from number below. It can be a valid phone number or a String
-$from = '254721000000';
+$from = 'SenderID';
 
 // Step 4: the number we are sending to - Any phone number
-$destination = '254710000000';
+$destination = '2547123456789';
 
-// Step 5: Replace your Install URL like https://mywebhost.com/sms/api with https://portal.paylifesms.com/sms/api is mandatory.
+// Step 5: Use https://sms.hostpro.co.ke/sms/api
+// <sms/api> is mandatory.
 
-$url = 'https://sms.hostpro.co.ke/api';
+$url = 'https://sms.hostpro.co.ke/sms/api';
 
 // the sms body
 $sms = 'test message from Host Pro SMS';
@@ -43,7 +44,7 @@ $sms = 'test message from Host Pro SMS';
 $unicode = 0; //For Plain Message
 $unicode = 1; //For Unicode Message
 
-
+//Dont Change anything from here
 // Create SMS Body for request
 $sms_body = array(
     'api_key' => $api_key,
@@ -53,8 +54,8 @@ $sms_body = array(
     'unicode' => $unicode,
 );
 
-// Step 6: instantiate a new PaylifeSMS API request
-$client = new HostProSMSAPI();
+// Step 6: instantiate a new Host Pro SMS API request
+$client = new HostproSMSAPI();
 
 // Step 7: Send SMS
 $response = $client->send_sms($sms_body, $url);
