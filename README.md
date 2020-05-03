@@ -32,7 +32,7 @@ $url = 'https://sms.hostpro.co.ke/sms/api';
 ```
 // SMS Body
 ```php
-$sms = 'test message from PaylifeSMS';
+$sms = 'test message from HostProSMS';
 ```
 // Unicode SMS
 ```php
@@ -104,9 +104,9 @@ $sms_body = array(
 ```
 
 ### Step 6: 
-Instantiate a new PaylifeSMS API request
+Instantiate a new Host Pro API request
 ```php
-$client = new PaylifeSMSAPI();
+$client = new HostProSMSAPI();
 ```
 
 ## Send SMS
