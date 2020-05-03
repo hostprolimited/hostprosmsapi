@@ -2,23 +2,25 @@
 
 // Step 1: set your API_KEY from https://sms.hostpro.co.ke/sms-api/info
 
-$api_key = 'a3l0am5pd3JodWxwQnhCbE9nYkM=';
+$api_key = 'You api key';
 
 // Step 2: Change the from number below. It can be a valid phone number or a String
-$from = '8801721000000';
+$from = '254712345678';
 
 // Step 3: the number we are sending to - Any phone number
 // Using comma (,) at end of the every phone number. You must have to insert country code at beginning of the number
 //You can insert maximum 100 number at a time
-$destination = '8801721000000,8801813000000,8801670000000,8801913000000';
+$destination = '254712345678,254712345678';
 
-// Step 4: Use https://sms.hostpro.co.ke/sms/api is mandatory.
+// Step 4: Use https://sms.hostpro.co.ke/sms/api 
+// <sms/api> is mandatory.
 
 $url = 'https://sms.hostpro.co.ke/sms/api';
 
 // the sms body
 $sms = 'test message from Host Pro SMS';
 
+//Dont change anything from here
 // Create SMS Body for request
 $sms_body = array(
     'action' => 'send-sms',
