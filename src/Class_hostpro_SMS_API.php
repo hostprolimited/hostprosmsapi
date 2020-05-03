@@ -1,8 +1,8 @@
 <?php
 
-namespace hostprosms;
+namespace HostProSMS;
 
-class HostProSMSAPI
+class HostproSMSAPI
 {
 
     /**
