@@ -127,7 +127,7 @@ Get your account balance
 $get_balance=$client->check_balance($api_key,$url);
 ```
 ## Response
-PaylifeSMS API return response with `json` format, like:
+Host Pro SMS API return response with `json` format, like:
 
 ```json
 {"code":"ok","message":"Successfully Send"}
