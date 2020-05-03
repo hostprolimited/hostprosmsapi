@@ -1,6 +1,6 @@
 <?php
 
-/* Send an SMS using PaylifeSMS. You can run this file 3 different ways:
+/* Send an SMS using Host Pro SMS. You can run this file 3 different ways:
  *
  * 1. Save it as example.php and at the command line, run
  *         php example.php
@@ -17,11 +17,11 @@
 // Step 1: Get the PaylifeSMS API library from https://github.com/matsaina/paylife.git,
 // following the instructions to install it with Composer.
 
-require_once 'src/Class_Paylife_SMS_API.php';
-use PaylifeSMS\PaylifeSMSAPI;
+require_once 'src/Class_hostpro_SMS_API.php';
+use HostProSMS\HostProSMSAPI;
 
 
-// Step 2: set your API_KEY from https://mywebhost.com/sms-api/info
+// Step 2: set your API_KEY from https://sms.hostpro.co.ke/sms-api/info
 
 $api_key = 'YWRtaW46YWRtaW4ucGFzc3dvcmQ=';
 
@@ -34,10 +34,10 @@ $destination = '254710000000';
 
 // Step 5: Replace your Install URL like https://mywebhost.com/sms/api with https://portal.paylifesms.com/sms/api is mandatory.
 
-$url = 'https://portal.paylifesms.com/sms/api';
+$url = 'https://sms.hostpro.co.ke/api';
 
 // the sms body
-$sms = 'test message from PaylifeSMS';
+$sms = 'test message from Host Pro SMS';
 
 // unicode sms
 $unicode = 0; //For Plain Message
@@ -54,7 +54,7 @@ $sms_body = array(
 );
 
 // Step 6: instantiate a new PaylifeSMS API request
-$client = new PaylifeSMSAPI();
+$client = new HostProSMSAPI();
 
 // Step 7: Send SMS
 $response = $client->send_sms($sms_body, $url);
