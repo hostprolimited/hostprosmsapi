@@ -1,0 +1,23 @@
+{
+  "name": "hostproke/hostprosmsapi",
+  "description": "Host Pro SMS API is build for Host Pro SMS- Bulk SMS Application",
+  "type": "library",
+  "license": "MIT",
+  "version": "2.7.0",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Host Pro",
+      "email": "info@hostpro.co.ke"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "ext-curl": "*"
+  }
+}
