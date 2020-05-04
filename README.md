@@ -11,7 +11,7 @@ $api_key = '--YOURAPIKEY--';
 ### Step 3:
 Change the from number below. It can be a valid phone number or a String
 ```php
-$from = '254721000000';
+$from = 'senderID';
 ```
 
 ### Step 4:
