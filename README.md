@@ -4,7 +4,7 @@
 Host Pro Sms API is build for Host Pro Sms - Bulk SMS Application
 
 ### Step 2:
-Get your API_KEY from `https://sms.hostpro.co.ke/sms-api/info` 
+Get your API_KEY from `https://sms.hostpro.co.ke/user/sms-api/info` 
 ```php
 $api_key = '--YOURAPIKEY--';
 ```
