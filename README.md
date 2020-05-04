@@ -106,11 +106,11 @@ $sms_body = array(
 ### Step 6: 
 Instantiate a new Host Pro API request
 ```php
-$client = new HostProSMSAPI();
+$client = new HostproSMSAPI();
 ```
 
 ## Send SMS
-Finally send your sms through PaylifeSMS API
+Finally send your sms through Host Pro SMS API
 ```php
 $response = $client->send_sms($sms_body, $url);
 ```
